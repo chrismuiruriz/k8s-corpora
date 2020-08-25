@@ -6,3 +6,6 @@ run:
 
 release:
 	docker push bryandollery/corpora
+
+deploy:
+	kubectl apply -f k8s
