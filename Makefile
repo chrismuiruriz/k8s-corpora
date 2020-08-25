@@ -8,4 +8,4 @@ release:
 	docker push bryandollery/corpora
 
 deploy:
-	kubectl apply -f k8s
+	kubectl -n corpora apply -f k8s/corpora.namespace.yaml -f k8s/corpora.deploy.yaml -f k8s/corpora.deploy.yaml
